@@ -96,11 +96,16 @@ const HomeView = ({ ranking, goals, events }) => {
                   {formatEventDate(events.upcoming.date)}
                 </div>
               )}
-              <h3 className="text-xl md:text-3xl font-body text-white">
+              <h3 className="text-xl md:text-3xl font-body text-white mb-3">
                 {events.upcoming.title}
               </h3>
+              {events.upcoming.setlist && (
+                <div className="text-sm text-content-text whitespace-pre-line leading-relaxed text-left max-w-sm mx-auto mb-3">
+                  {events.upcoming.setlist}
+                </div>
+              )}
               {events.upcoming.notes && (
-                <p className="text-sm text-gray-400 mt-3">{events.upcoming.notes}</p>
+                <p className="text-sm text-gray-400">{events.upcoming.notes}</p>
               )}
             </div>
           </div>
