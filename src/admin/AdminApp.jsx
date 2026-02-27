@@ -98,11 +98,13 @@ function AdminApp() {
   const handleSyncFromGitHub = (remoteConfig) => {
     setConfig(prev => {
       const synced = deepMerge(DEFAULT_CONFIG, remoteConfig)
+      // deploy セクション全体を現在値で保持（sync で上書きさせない）
+      if (prev.deploy) {
+        synced.deploy = { ...synced.deploy, ...prev.deploy }
+      }
+      // rev: トークンを復元
       if (synced.deploy?.token?.startsWith('rev:')) {
         synced.deploy.token = synced.deploy.token.slice(4).split('').reverse().join('')
-      }
-      if (prev.deploy?.token && !prev.deploy.token.startsWith('rev:')) {
-        synced.deploy = { ...synced.deploy, token: prev.deploy.token }
       }
       return synced
     })
