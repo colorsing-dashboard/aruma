@@ -18,7 +18,7 @@ function App() {
   const [currentView, setCurrentView] = useState(enabledViews[0]?.id || 'home')
 
   const {
-    ranking, goals, rights, specialIndex, benefits, history, icons,
+    ranking, goals, rights, specialIndex, benefits, history, events, icons,
     loading, loadingIcons, iconError, error, lastUpdate,
     loadData, loadIcons,
   } = useSheetData(config.sheets)
@@ -113,13 +113,14 @@ function App() {
 
   // ビューに渡すprops
   const viewProps = {
-    home: { ranking, goals },
+    home: { ranking, goals, events },
     menu: { benefits, onSelectBenefit: setSelectedBenefit },
     rights: { rights, onSelectPerson: setSelectedPerson, specialIndex },
     icons: {
       icons, selectedMonth, setSelectedMonth,
       loading: loadingIcons, iconError,
     },
+    events: { events },
   }
 
   return (

@@ -3,9 +3,19 @@ import { convertDriveUrl } from '../lib/sheets'
 import CountUp from '../components/CountUp'
 
 const RANKING_FIELDS = { RANK: 0, NAME: 1, POINTS: 2, IMAGE: 3 }
-const GOAL_FIELDS = { THIS_WEEK: 0, THIS_MONTH: 1 }
 
-const HomeView = ({ ranking, goals }) => {
+const formatEventDate = (dateStr) => {
+  const s = String(dateStr).replace(/\D/g, '')
+  if (s.length === 8) {
+    const y = s.slice(0, 4)
+    const m = parseInt(s.slice(4, 6), 10)
+    const d = parseInt(s.slice(6, 8), 10)
+    return `${y}年${m}月${d}日`
+  }
+  return dateStr
+}
+
+const HomeView = ({ ranking, goals, events }) => {
   const config = useConfig()
 
   return (
@@ -65,6 +75,37 @@ const HomeView = ({ ranking, goals }) => {
           ))}
         </div>
       </section>
+
+      {/* 次回イベント告知 */}
+      {events?.upcoming?.title && (
+        <section className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-4xl font-body mb-4 md:mb-8 text-center text-glow-soft text-primary">
+            Next Event
+          </h2>
+          <div className="glass-effect rounded-2xl border border-amber/40 overflow-hidden">
+            {events.upcoming.imageUrl && (
+              <img
+                src={convertDriveUrl(events.upcoming.imageUrl, 1200)}
+                alt={events.upcoming.title}
+                className="w-full object-cover"
+              />
+            )}
+            <div className="p-5 md:p-8 text-center">
+              {events.upcoming.date && (
+                <div className="text-amber text-sm font-body mb-2">
+                  {formatEventDate(events.upcoming.date)}
+                </div>
+              )}
+              <h3 className="text-xl md:text-3xl font-body text-white">
+                {events.upcoming.title}
+              </h3>
+              {events.upcoming.notes && (
+                <p className="text-sm text-gray-400 mt-3">{events.upcoming.notes}</p>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* FAQ */}
       {config.home.faq.enabled !== false && config.home.faq.items.length > 0 && (
