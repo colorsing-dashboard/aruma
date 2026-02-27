@@ -28,22 +28,22 @@ const PastEventCard = ({ event }) => {
 
   return (
     <div className="glass-effect rounded-xl border border-card-border/30 overflow-hidden">
-      <div className="flex gap-4 p-4">
+      <div className="flex gap-4 md:gap-6 p-4 md:p-5">
         {imgSrc && (
           <img
             src={imgSrc}
             alt={event.title}
-            className="w-20 h-28 object-cover rounded-lg shrink-0"
+            className="w-20 h-28 md:w-28 md:h-40 object-cover rounded-lg shrink-0"
             loading="lazy"
           />
         )}
         <div className="flex-1 min-w-0">
           {event.date && (
-            <div className="text-xs text-gray-500 mb-1">{formatEventDate(event.date)}</div>
+            <div className="text-xs md:text-sm text-gray-500 mb-1">{formatEventDate(event.date)}</div>
           )}
-          <h3 className="text-base font-body text-white mb-2 leading-snug">{event.title}</h3>
+          <h3 className="text-base md:text-lg font-body text-white mb-2 leading-snug">{event.title}</h3>
           {event.notes && (
-            <p className="text-xs text-gray-400 mb-2">{event.notes}</p>
+            <p className="text-xs md:text-sm text-gray-400 mb-2">{event.notes}</p>
           )}
           {event.setlist && (
             <>
