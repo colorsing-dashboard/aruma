@@ -100,8 +100,13 @@ const HomeView = ({ ranking, goals, events }) => {
                 {events.upcoming.title}
               </h3>
               {events.upcoming.setlist && (
-                <div className="text-sm text-content-text whitespace-pre-line leading-relaxed text-left max-w-sm mx-auto mb-3">
-                  {events.upcoming.setlist}
+                <div className="text-sm text-content-text max-w-xs mx-auto mb-3 space-y-1">
+                  {events.upcoming.setlist.split('\n').filter(l => l.trim()).map((line, i) => (
+                    <div key={i} className="flex items-baseline gap-1.5 justify-center">
+                      <span className="text-highlight shrink-0">▸</span>
+                      <span>{line.trim()}</span>
+                    </div>
+                  ))}
                 </div>
               )}
               {events.upcoming.notes && (
