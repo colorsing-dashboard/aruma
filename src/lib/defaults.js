@@ -22,7 +22,7 @@ const DEFAULT_CONFIG = {
     titleGlassBlur: 12,
     titlePaddingY: 12,
     headerOverlayOpacity: 0.3,
-    headerImageFit: 'cover',
+    headerImageFit: 'contain',
     headerHeight: '',
     headerHeightMobile: '',
     headerImageW: 0,
