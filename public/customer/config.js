@@ -11,9 +11,26 @@ window.DASHBOARD_CONFIG = {
     "pageTitle": "深海BAR MAGUROPHONE - 特典管理",
     "loadingEmoji": "🐟",
     "loadingText": "Loading...",
+    "showHeader": true,
     "showTitle": true,
+    "titleStyle": "glass",
     "titleGradient": true,
-    "titleGradientDirection": "to-r"
+    "titleGradientDirection": "to-r",
+    "titleGlow": false,
+    "titlePosition": "center",
+    "titleSize": "large",
+    "titleTextFill": "white",
+    "titleGlassBg": 0.25,
+    "titleGlassBlur": 9,
+    "titlePaddingY": 6,
+    "headerOverlayOpacity": 0,
+    "headerImageFit": "contain",
+    "headerHeight": "",
+    "headerHeightMobile": "",
+    "headerImageW": 0,
+    "headerImageH": 0,
+    "headerImageWMobile": 0,
+    "headerImageHMobile": 0
   },
   "colors": {
     "deepBlue": "#08121e",
@@ -26,6 +43,9 @@ window.DASHBOARD_CONFIG = {
   "colorOverrides": {
     "headerGradientStart": "",
     "headerGradientEnd": "",
+    "titleGradientStart": "",
+    "titleGradientMid": "",
+    "titleGradientEnd": "",
     "cardBorder": "",
     "cardBorderHover": "",
     "primaryText": "",
@@ -36,7 +56,12 @@ window.DASHBOARD_CONFIG = {
     "nameText": "",
     "footerText": "",
     "contentText": "",
-    "titleColor": ""
+    "titleColor": "#8ab5f5",
+    "subText": "",
+    "popupOverlayColor": "",
+    "popupOverlayOpacity": "",
+    "menuCardLabelColor": "",
+    "menuCardLabelOpacity": ""
   },
   "fonts": {
     "display": "'Sacramento', cursive",
@@ -158,6 +183,7 @@ window.DASHBOARD_CONFIG = {
   "home": {
     "rankingTitle": "Ranking",
     "pointsLabel": "歌推しPt",
+    "pointsUnit": "k",
     "targetsTitle": "Targets",
     "targetLabels": [
       "今旬の目標",
@@ -209,10 +235,10 @@ window.DASHBOARD_CONFIG = {
     "particleOpacity": 1
   },
   "deploy": {
-    "owner": "colorsing-dashboard",
-    "repo": "",
-    "branch": "main",
-    "token": ""
+    "owner": "magurophone",
+    "repo": "ColorSing_LP",
+    "branch": "magurophone",
+    "token": "rev:bqkuJMHlECWHXXOMlYHp37NSBJRhniwOzQBgR90LhGahzSyDzanDrEqMJ5I_u2DkncNKm09A0IMBSTQB11_tap_buhtig"
   },
   "admin": {
     "password": "",
