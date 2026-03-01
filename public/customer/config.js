@@ -104,7 +104,7 @@ window.DASHBOARD_CONFIG = {
     {
       "id": "menu",
       "label": "Menu",
-      "icon": "ph:trophy:regular",
+      "icon": "book-open",
       "enabled": true
     },
     {
@@ -132,61 +132,38 @@ window.DASHBOARD_CONFIG = {
   "benefitTiers": [
     {
       "key": "1k",
-      "icon": "🖼️",
+      "icon": "hi:face-smile",
       "columnIndex": 0,
       "displayTemplate": "特典: {value}",
       "isMembership": false
     },
     {
       "key": "5k",
-      "icon": "🎵",
+      "icon": "tb:vinyl",
       "columnIndex": 1,
-      "displayTemplate": "強制リクエスト: {value}曲"
+      "displayTemplate": "権利:残り {value}曲"
     },
     {
-      "key": "10k",
-      "icon": "🎮",
+      "key": "15k",
+      "icon": "tb:mail",
       "columnIndex": 2,
-      "displayTemplate": "権利: {value}時間分"
+      "displayTemplate": "権利:残り {value}通"
     },
     {
       "key": "20k",
-      "icon": "💬",
+      "icon": "ph:headphones:regular",
       "columnIndex": 3,
-      "displayTemplate": "オープンチャット招待済",
-      "isBoolean": true
+      "displayTemplate": "権利:残り {value}回",
+      "isBoolean": false
     },
     {
-      "key": "30k",
-      "icon": "🎤",
+      "key": "100k",
+      "icon": "hi:key",
       "columnIndex": 4,
-      "displayTemplate": "アカペラ音源獲得: {value}曲"
-    },
-    {
-      "key": "40k",
-      "icon": "⚡",
-      "columnIndex": 5,
-      "displayTemplate": "強制リクエスト: {value}曲"
-    },
-    {
-      "key": "50k",
-      "icon": "🏆",
-      "columnIndex": 6,
-      "displayTemplate": "ミックス音源獲得: {value}曲"
-    },
-    {
-      "key": "メンバーシップA",
-      "icon": "👑",
-      "columnIndex": 7,
-      "displayTemplate": "月内リクエスト対応中",
-      "isMembership": true
-    },
-    {
-      "key": "メンバーシップB",
-      "icon": "🌟",
-      "columnIndex": 0,
       "displayTemplate": "特典: {value}",
-      "isMembership": true
+      "useKey": true,
+      "isMembership": true,
+      "accessKey": ""
     }
   ],
   "home": {
