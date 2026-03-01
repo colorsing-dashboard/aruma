@@ -103,9 +103,10 @@ window.DASHBOARD_CONFIG = {
     },
     {
       "id": "menu",
-      "label": "Menu",
+      "label": "特典内容",
       "icon": "book-open",
-      "enabled": true
+      "enabled": true,
+      "title": "特典内容"
     },
     {
       "id": "rights",
