@@ -11,7 +11,7 @@ window.DASHBOARD_CONFIG = {
     "pageTitle": "サイト名を設定 - 特典管理",
     "loadingEmoji": "❤️‍🔥",
     "loadingText": "Loading...",
-    "showHeader": true,
+    "showHeader": false,
     "showTitle": false,
     "titleStyle": "glass",
     "titleGradient": true,
@@ -33,13 +33,13 @@ window.DASHBOARD_CONFIG = {
     "headerImageHMobile": 0
   },
   "colors": {
-    "deepBlue": "#100808",
-    "oceanTeal": "#241010",
-    "lightBlue": "#e07040",
-    "amber": "#f0c048",
-    "accent": "#c83040",
-    "gold": "#ffd700",
-    "brightness": "dark"
+    "deepBlue": "#FFFBF6",
+    "oceanTeal": "#f0eadd",
+    "lightBlue": "#E87C35",
+    "amber": "#C96A12",
+    "accent": "#C84B2A",
+    "gold": "#B8860B",
+    "brightness": "light"
   },
   "colorOverrides": {
     "headerGradientStart": "",
@@ -49,9 +49,9 @@ window.DASHBOARD_CONFIG = {
     "titleGradientEnd": "",
     "cardBorder": "",
     "cardBorderHover": "",
-    "primaryText": "",
-    "accentText": "",
-    "rank1Card": "",
+    "primaryText": "#e40000",
+    "accentText": "#730000",
+    "rank1Card": "#f60001",
     "backgroundMain": "",
     "backgroundMid": "",
     "nameText": "",
@@ -75,7 +75,7 @@ window.DASHBOARD_CONFIG = {
   },
   "images": {
     "headerDesktop": "",
-    "headerMobile": "https://drive.google.com/file/d/1TrdMzROdyV3obPTOGJbaH0HTX_DoVESU/view?usp=drivesdk",
+    "headerMobile": "",
     "favicon": "./customer/vite.svg"
   },
   "sheets": {
@@ -203,7 +203,7 @@ window.DASHBOARD_CONFIG = {
     "iconFloat": true,
     "particles": "bubble",
     "particleDirection": "up",
-    "particleColor": "#d3e2ff",
+    "particleColor": "",
     "particleSize": 0.5,
     "particleOpacity": 1
   },
