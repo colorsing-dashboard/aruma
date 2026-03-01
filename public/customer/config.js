@@ -188,7 +188,7 @@ window.DASHBOARD_CONFIG = {
   },
   "deploy": {
     "owner": "colorsing-dashboard",
-    "repo": "",
+    "repo": "aruma",
     "branch": "main",
     "token": ""
   },
