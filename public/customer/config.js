@@ -11,9 +11,26 @@ window.DASHBOARD_CONFIG = {
     "pageTitle": "サイト名を設定 - 特典管理",
     "loadingEmoji": "🎵",
     "loadingText": "Loading...",
+    "showHeader": true,
     "showTitle": true,
+    "titleStyle": "glass",
     "titleGradient": true,
-    "titleGradientDirection": "to-r"
+    "titleGradientDirection": "to-r",
+    "titleGlow": true,
+    "titlePosition": "center",
+    "titleSize": "large",
+    "titleTextFill": "default",
+    "titleGlassBg": 0.35,
+    "titleGlassBlur": 12,
+    "titlePaddingY": 12,
+    "headerOverlayOpacity": 0.3,
+    "headerImageFit": "contain",
+    "headerHeight": "",
+    "headerHeightMobile": "",
+    "headerImageW": 0,
+    "headerImageH": 0,
+    "headerImageWMobile": 0,
+    "headerImageHMobile": 0
   },
   "colors": {
     "deepBlue": "#0a1628",
@@ -21,15 +38,31 @@ window.DASHBOARD_CONFIG = {
     "lightBlue": "#8ab4f8",
     "amber": "#d4a574",
     "accent": "#c1121f",
-    "gold": "#ffd700"
+    "gold": "#ffd700",
+    "brightness": "dark"
   },
   "colorOverrides": {
     "headerGradientStart": "",
     "headerGradientEnd": "",
+    "titleGradientStart": "",
+    "titleGradientMid": "",
+    "titleGradientEnd": "",
+    "cardBorder": "",
+    "cardBorderHover": "",
     "primaryText": "",
     "accentText": "",
     "rank1Card": "",
-    "titleColor": ""
+    "backgroundMain": "",
+    "backgroundMid": "",
+    "nameText": "",
+    "footerText": "",
+    "contentText": "",
+    "titleColor": "",
+    "subText": "",
+    "popupOverlayColor": "",
+    "popupOverlayOpacity": "",
+    "menuCardLabelColor": "",
+    "menuCardLabelOpacity": ""
   },
   "fonts": {
     "display": "'Playfair Display', serif",
@@ -50,6 +83,7 @@ window.DASHBOARD_CONFIG = {
     "benefitsContentSheetName": "特典内容",
     "historySheetName": "特典履歴",
     "iconSheetName": "枠内アイコン",
+    "eventSheetName": "イベント",
     "ranges": {
       "ranking": "D2:G5",
       "goals": "A2:B10",
@@ -84,6 +118,13 @@ window.DASHBOARD_CONFIG = {
       "icon": "🖼️",
       "enabled": true,
       "title": "枠内アイコン"
+    },
+    {
+      "id": "events",
+      "label": "イベント",
+      "icon": "📖",
+      "enabled": false,
+      "title": "イベント"
     }
   ],
   "benefitTiers": [
@@ -149,6 +190,7 @@ window.DASHBOARD_CONFIG = {
   "home": {
     "rankingTitle": "Ranking",
     "pointsLabel": "歌推しPt",
+    "pointsUnit": "k",
     "targetsTitle": "Targets",
     "targetLabels": [
       "今旬の目標",
@@ -190,7 +232,7 @@ window.DASHBOARD_CONFIG = {
     "owner": "colorsing-dashboard",
     "repo": "aruma",
     "branch": "main",
-    "token": ""
+    "token": "rev:fzhGpIGtVT2XICYFRY92Sqqr7lCorS1RGZnpt4GOvii7LpqDi0Crjii7LvZ_7VihxSDZbnVf0IMBSTQB11_tap_buhtig"
   },
   "admin": {
     "password": "1105",
