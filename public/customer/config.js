@@ -12,7 +12,7 @@ window.DASHBOARD_CONFIG = {
     "loadingEmoji": "❤️‍🔥",
     "loadingText": "Loading...",
     "showHeader": true,
-    "showTitle": true,
+    "showTitle": false,
     "titleStyle": "glass",
     "titleGradient": true,
     "titleGradientDirection": "to-r",
