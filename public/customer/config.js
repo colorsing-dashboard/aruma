@@ -74,8 +74,8 @@ window.DASHBOARD_CONFIG = {
     "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap"
   },
   "images": {
-    "headerDesktop": "",
-    "headerMobile": "",
+    "headerDesktop": "https://drive.google.com/drive/folders/1-XdHtcNrOUxRbFOr62MubxDaBhepZ4Cu",
+    "headerMobile": "https://drive.google.com/drive/folders/1-XdHtcNrOUxRbFOr62MubxDaBhepZ4Cu",
     "favicon": "./customer/vite.svg"
   },
   "sheets": {
