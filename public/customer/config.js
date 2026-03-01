@@ -203,7 +203,7 @@ window.DASHBOARD_CONFIG = {
     "iconFloat": true,
     "particles": "bubble",
     "particleDirection": "up",
-    "particleColor": "",
+    "particleColor": "#d3e2ff",
     "particleSize": 0.5,
     "particleOpacity": 1
   },
