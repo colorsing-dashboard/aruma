@@ -23,7 +23,7 @@ window.DASHBOARD_CONFIG = {
     "titleGlassBg": 0.05,
     "titleGlassBlur": 2,
     "titlePaddingY": 2,
-    "headerOverlayOpacity": 0,
+    "headerOverlayOpacity": 0.5,
     "headerImageFit": "contain",
     "headerHeight": "",
     "headerHeightMobile": "",
@@ -74,8 +74,8 @@ window.DASHBOARD_CONFIG = {
     "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap"
   },
   "images": {
-    "headerDesktop": "https://drive.google.com/drive/folders/1-XdHtcNrOUxRbFOr62MubxDaBhepZ4Cu",
-    "headerMobile": "https://drive.google.com/drive/folders/1-XdHtcNrOUxRbFOr62MubxDaBhepZ4Cu",
+    "headerDesktop": "",
+    "headerMobile": "https://drive.google.com/file/d/1H3XeSillBnyrNMYW09gSvzAjlj9nU3Du/view?usp=drivesdk",
     "favicon": "./customer/vite.svg"
   },
   "sheets": {
