@@ -3,13 +3,13 @@
 
 window.DASHBOARD_CONFIG = {
   "brand": {
-    "name": "",
+    "name": "あるま",
     "sidebarTitle": "　color sing",
     "footerText": "",
     "footerSubText": "",
     "footerNote": "",
     "pageTitle": "サイト名を設定 - 特典管理",
-    "loadingEmoji": "🎵",
+    "loadingEmoji": "❤️‍🔥",
     "loadingText": "Loading...",
     "showHeader": true,
     "showTitle": true,
@@ -20,10 +20,10 @@ window.DASHBOARD_CONFIG = {
     "titlePosition": "center",
     "titleSize": "large",
     "titleTextFill": "default",
-    "titleGlassBg": 0.35,
-    "titleGlassBlur": 12,
-    "titlePaddingY": 12,
-    "headerOverlayOpacity": 0.3,
+    "titleGlassBg": 0.05,
+    "titleGlassBlur": 2,
+    "titlePaddingY": 2,
+    "headerOverlayOpacity": 0,
     "headerImageFit": "contain",
     "headerHeight": "",
     "headerHeightMobile": "",
@@ -33,11 +33,11 @@ window.DASHBOARD_CONFIG = {
     "headerImageHMobile": 0
   },
   "colors": {
-    "deepBlue": "#0a1628",
-    "oceanTeal": "#1b4965",
-    "lightBlue": "#8ab4f8",
-    "amber": "#d4a574",
-    "accent": "#c1121f",
+    "deepBlue": "#2d191d",
+    "oceanTeal": "#7c1510",
+    "lightBlue": "#e07040",
+    "amber": "#f0c048",
+    "accent": "#c83040",
     "gold": "#ffd700",
     "brightness": "dark"
   },
@@ -47,9 +47,9 @@ window.DASHBOARD_CONFIG = {
     "titleGradientStart": "",
     "titleGradientMid": "",
     "titleGradientEnd": "",
-    "cardBorder": "",
+    "cardBorder": "#ff180a",
     "cardBorderHover": "",
-    "primaryText": "",
+    "primaryText": "#ff1640",
     "accentText": "",
     "rank1Card": "",
     "backgroundMain": "",
@@ -62,13 +62,15 @@ window.DASHBOARD_CONFIG = {
     "popupOverlayColor": "",
     "popupOverlayOpacity": "",
     "menuCardLabelColor": "",
-    "menuCardLabelOpacity": ""
+    "menuCardLabelOpacity": "",
+    "glassBgColor": "",
+    "glassBgOpacity": ""
   },
   "fonts": {
-    "display": "'Playfair Display', serif",
-    "displayUrl": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap",
-    "body": "'M PLUS 2', sans-serif",
-    "bodyUrl": "https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@400;500;700&display=swap",
+    "display": "'Sawarabi Gothic', sans-serif",
+    "displayUrl": "https://fonts.googleapis.com/css2?family=Sawarabi%20Gothic:wght@400&display=swap",
+    "body": "'Sawarabi Gothic', sans-serif",
+    "bodyUrl": "https://fonts.googleapis.com/css2?family=Sawarabi%20Gothic:wght@400&display=swap",
     "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap"
   },
   "images": {
