@@ -164,7 +164,8 @@ window.DASHBOARD_CONFIG = {
       "displayTemplate": "特典: {value}",
       "useKey": true,
       "isMembership": true,
-      "accessKey": ""
+      "accessKey": "",
+      "isBoolean": true
     }
   ],
   "home": {
