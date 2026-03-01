@@ -11,14 +11,14 @@ window.DASHBOARD_CONFIG = {
     "pageTitle": "サイト名を設定 - 特典管理",
     "loadingEmoji": "❤️‍🔥",
     "loadingText": "Loading...",
-    "showHeader": true,
-    "showTitle": true,
+    "showHeader": false,
+    "showTitle": false,
     "titleStyle": "glass",
     "titleGradient": true,
     "titleGradientDirection": "to-r",
     "titleGlow": true,
     "titlePosition": "center",
-    "titleSize": "large",
+    "titleSize": "medium",
     "titleTextFill": "default",
     "titleGlassBg": 0.05,
     "titleGlassBlur": 2,
@@ -33,13 +33,13 @@ window.DASHBOARD_CONFIG = {
     "headerImageHMobile": 0
   },
   "colors": {
-    "deepBlue": "#2d191d",
-    "oceanTeal": "#7c1510",
-    "lightBlue": "#e07040",
-    "amber": "#f0c048",
-    "accent": "#c83040",
-    "gold": "#ffd700",
-    "brightness": "dark"
+    "deepBlue": "#FFFBF6",
+    "oceanTeal": "#f0eadd",
+    "lightBlue": "#E87C35",
+    "amber": "#C96A12",
+    "accent": "#C84B2A",
+    "gold": "#B8860B",
+    "brightness": "light"
   },
   "colorOverrides": {
     "headerGradientStart": "",
@@ -47,11 +47,11 @@ window.DASHBOARD_CONFIG = {
     "titleGradientStart": "",
     "titleGradientMid": "",
     "titleGradientEnd": "",
-    "cardBorder": "#ff180a",
+    "cardBorder": "",
     "cardBorderHover": "",
-    "primaryText": "#ff1640",
-    "accentText": "",
-    "rank1Card": "",
+    "primaryText": "#e40000",
+    "accentText": "#730000",
+    "rank1Card": "#f60001",
     "backgroundMain": "",
     "backgroundMid": "",
     "nameText": "",
@@ -98,34 +98,34 @@ window.DASHBOARD_CONFIG = {
     {
       "id": "home",
       "label": "Home",
-      "icon": "🏠",
+      "icon": "hi:home",
       "enabled": true
     },
     {
       "id": "menu",
       "label": "Menu",
-      "icon": "🍸",
+      "icon": "ph:trophy:regular",
       "enabled": true
     },
     {
       "id": "rights",
-      "label": "ボトルキープ",
-      "icon": "👥",
+      "label": "特典権利者",
+      "icon": "hi:user-group",
       "enabled": true,
-      "title": "ボトルキープ一覧"
+      "title": "特典権利者"
     },
     {
       "id": "icons",
       "label": "枠内アイコン",
-      "icon": "🖼️",
+      "icon": "hi:face-smile",
       "enabled": true,
       "title": "枠内アイコン"
     },
     {
       "id": "events",
       "label": "イベント",
-      "icon": "📖",
-      "enabled": false,
+      "icon": "ph:guitar:regular",
+      "enabled": true,
       "title": "イベント"
     }
   ],
