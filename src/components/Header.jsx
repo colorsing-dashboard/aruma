@@ -140,8 +140,12 @@ const Header = ({ lastUpdate, loading, onRefresh }) => {
   const imgH  = config.brand.headerImageH
   const imgWM = config.brand.headerImageWMobile
   const imgHM = config.brand.headerImageHMobile
-  const defaultHeightDesktop = hasImage ? '600px' : '200px'
-  const defaultHeightMobile  = hasImage ? '400px' : '140px'
+  const paddingY = config.brand.titlePaddingY ?? 12
+  // 画像なし: タイトルのpadding + フォントサイズ + 上下余白で自動算出
+  const noImageDesktop = `calc(${paddingY * 2}px + 5rem + 48px)`
+  const noImageMobile  = `calc(${paddingY * 2}px + 3rem + 32px)`
+  const defaultHeightDesktop = hasImage ? '600px' : noImageDesktop
+  const defaultHeightMobile  = hasImage ? '400px' : noImageMobile
   const heightDesktop = config.brand.headerHeight || defaultHeightDesktop
   const heightMobile  = config.brand.headerHeightMobile || defaultHeightMobile
 
