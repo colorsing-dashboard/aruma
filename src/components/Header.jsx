@@ -170,14 +170,18 @@ const Header = ({ lastUpdate, loading, onRefresh }) => {
     el.textContent = `.header-cs{${mobile}}@media(min-width:768px){.header-cs{${desktop}}}`
   }, [imgW, imgH, imgWM, imgHM, heightDesktop, heightMobile, hasImage])
 
+  // 画像もグラデーション設定もない場合、ガラスエフェクト用にテーマカラーの淡いグラデーションを自動生成
+  const autoGradient = !hasImage && !hasHeaderBg
+  const headerBg = hasHeaderBg
+    ? `linear-gradient(to bottom, var(--color-header-gradient-end, var(--color-deep-blue)), var(--color-header-gradient-start, var(--color-ocean-teal)) 50%, var(--color-header-gradient-end, var(--color-deep-blue)))`
+    : autoGradient
+      ? `linear-gradient(135deg, var(--color-ocean-teal), var(--color-deep-blue) 40%, var(--color-light-blue) 70%, var(--color-ocean-teal))`
+      : 'transparent'
+
   return (
     <div
       className={`${imgFit !== 'contain' || !hasImage ? 'header-cs ' : ''}w-full relative overflow-hidden`}
-      style={{
-        background: hasHeaderBg
-          ? `linear-gradient(to bottom, var(--color-header-gradient-end, var(--color-deep-blue)), var(--color-header-gradient-start, var(--color-ocean-teal)) 50%, var(--color-header-gradient-end, var(--color-deep-blue)))`
-          : 'transparent',
-      }}
+      style={{ background: headerBg }}
     >
       {imgFit === 'contain' ? (
         <>
@@ -206,7 +210,7 @@ const Header = ({ lastUpdate, loading, onRefresh }) => {
           ></div>
         </>
       )}
-      {(hasImage || hasHeaderBg) && (
+      {(hasImage || hasHeaderBg || autoGradient) && (
         <>
           <div className="absolute inset-0 bg-black" style={{ opacity: overlayOpacity }}></div>
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEuNSIgZmlsbD0icmdiYSgxMzgsIDE4MCwgMjQ4LCAwLjA1KSIvPjxjaXJjbGUgY3g9IjIwIiBjeT0iMjAiIHI9IjIiIGZpbGw9InJnYmEoMTM4LCAxODAsIDI0OCwgMC4wOCkiLz48Y2lyY2xlIGN4PSIzNSIgY3k9IjEwIiByPSIxIiBmaWxsPSJyZ2JhKDEzOCwgMTgwLCAyNDgsIDAuMDMpIi8+PC9zdmc+')] opacity-20 animate-float"></div>
