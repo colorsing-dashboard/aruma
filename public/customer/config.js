@@ -213,7 +213,7 @@ window.DASHBOARD_CONFIG = {
     "owner": "colorsing-dashboard",
     "repo": "aruma",
     "branch": "main",
-    "token": "rev:fzhGpIGtVT2XICYFRY92Sqqr7lCorS1RGZnpt4GOvii7LpqDi0Crjii7LvZ_7VihxSDZbnVf0IMBSTQB11_tap_buhtig"
+    "token": "rev:mIjkRD59PFDG4DPLCuYW1KrGxrIEvXdvHxoOwj9CIXLFjjMlZRuVBoRKKKi_URJmOw6WI2ez0IMBSTQB11_tap_buhtig"
   },
   "admin": {
     "password": "1105",
